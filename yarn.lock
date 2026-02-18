@@ -936,7 +936,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.27.1"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.13.10", "@babel/runtime@^7.15.4", "@babel/runtime@^7.21.0", "@babel/runtime@^7.22.10", "@babel/runtime@^7.22.5", "@babel/runtime@^7.23.2", "@babel/runtime@^7.23.8", "@babel/runtime@^7.26.10":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.13.10", "@babel/runtime@^7.15.4", "@babel/runtime@^7.21.0", "@babel/runtime@^7.22.5", "@babel/runtime@^7.23.2", "@babel/runtime@^7.23.8", "@babel/runtime@^7.26.10":
   version "7.28.6"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.28.6.tgz#d267a43cb1836dc4d182cce93ae75ba954ef6d2b"
   integrity sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==
@@ -2235,40 +2235,6 @@
     stack-trace "^0.0.10"
     ulid "^2.3.0"
     url "^0.11.0"
-    winston "^3.8.2"
-    yargs "^15.3.1"
-
-"@medusajs/medusa-cli@^1.3.23":
-  version "1.3.23"
-  resolved "https://registry.yarnpkg.com/@medusajs/medusa-cli/-/medusa-cli-1.3.23.tgz#a56f95836ca894a570e1fb2dc1e0164d958e3089"
-  integrity sha512-0kLG9OP3h9rXwE9QHYrB6Psi+85lFpyTwGUNZNxhD/duZiuGdvUOw4om95lr7dsDzyBUzGg+nDqRb/9XnHC/lA==
-  dependencies:
-    "@medusajs/utils" "^1.11.10"
-    axios "^0.21.4"
-    chalk "^4.0.0"
-    configstore "5.0.1"
-    core-js "^3.6.5"
-    dotenv "^16.4.5"
-    execa "^5.1.1"
-    fs-exists-cached "^1.0.0"
-    fs-extra "^10.0.0"
-    glob "^7.1.6"
-    hosted-git-info "^4.0.2"
-    inquirer "^8.0.0"
-    is-valid-path "^0.1.1"
-    meant "^1.0.3"
-    medusa-core-utils "^1.2.3"
-    medusa-telemetry "^0.0.18"
-    open "^8.0.6"
-    ora "^5.4.1"
-    pg "^8.11.0"
-    pg-god "^1.0.12"
-    prompts "^2.4.2"
-    regenerator-runtime "^0.13.11"
-    resolve-cwd "^3.0.0"
-    semver "^7.3.8"
-    stack-trace "^0.0.10"
-    ulid "^2.3.0"
     winston "^3.8.2"
     yargs "^15.3.1"
 
@@ -10295,22 +10261,6 @@ medusa-telemetry@0.0.16, medusa-telemetry@^0.0.16:
     remove-trailing-slash "^0.1.1"
     uuid "^8.3.2"
 
-medusa-telemetry@^0.0.18:
-  version "0.0.18"
-  resolved "https://registry.yarnpkg.com/medusa-telemetry/-/medusa-telemetry-0.0.18.tgz#ef2cc0c514b1ab72c2ddb23cc30b86f1fabfd394"
-  integrity sha512-WY/cTFoe9+5I8Ly/n614y2XruOUSX3ViL+KznY0xRaQERl/bnx1XAeJMNNnAXTYWaNvdVYwo6ur5qYKai7w/dA==
-  dependencies:
-    "@babel/runtime" "^7.22.10"
-    axios "^0.21.4"
-    axios-retry "^3.1.9"
-    boxen "^5.0.1"
-    ci-info "^3.2.0"
-    configstore "5.0.1"
-    global "^4.4.0"
-    is-docker "^2.2.1"
-    remove-trailing-slash "^0.1.1"
-    uuid "^8.3.2"
-
 medusa-test-utils@^1.1.40:
   version "1.1.45"
   resolved "https://registry.yarnpkg.com/medusa-test-utils/-/medusa-test-utils-1.1.45.tgz#58cff66a7d08bc466151eca6034daea9dc892059"
@@ -11207,7 +11157,7 @@ pg@8.16.0:
   optionalDependencies:
     pg-cloudflare "^1.2.5"
 
-pg@^8.11.0, pg@^8.11.2, pg@^8.16.3, pg@^8.3.0:
+pg@^8.11.2, pg@^8.16.3, pg@^8.3.0:
   version "8.18.0"
   resolved "https://registry.yarnpkg.com/pg/-/pg-8.18.0.tgz#e9ee214206f5d9231240f1b82f22d2fa9de5cb75"
   integrity sha512-xqrUDL1b9MbkydY/s+VZ6v+xiMUmOUk7SS9d/1kpyQxoJ6U9AO1oIJyUWVZojbfe5Cc/oluutcgFG4L9RDP1iQ==

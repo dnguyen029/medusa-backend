@@ -31,6 +31,7 @@
     "@medusajs/framework": "2.13.1",
     "@medusajs/medusa": "^2.13.1",
     "dotenv": "^17.3.1",
+    "medusa-google-storage": "^1.0.2",
     "medusa-plugin-contentful": "^1.2.12"
   },
   "devDependencies": {

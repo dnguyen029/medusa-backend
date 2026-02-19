@@ -60,5 +60,14 @@ module.exports = defineConfig({
         management_token: process.env.CONTENTFUL_MANAGEMENT_TOKEN,
       },
     },
+    {
+      resolve: `medusa-google-storage`,
+      options: {
+        project_id: process.env.GCS_PROJECT_ID,
+        bucket: process.env.GCS_BUCKET,
+        gcs_path: process.env.GCS_PATH,
+        keyFilename: process.env.GCS_KEYFILE,
+      },
+    },
   ]
 })

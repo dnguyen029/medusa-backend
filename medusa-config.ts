@@ -53,11 +53,11 @@ module.exports = defineConfig({
   ],
   plugins: [
     {
-      resolve: "medusa-plugin-sanity",
+      resolve: `medusa-plugin-contentful`,
       options: {
-        api_token: process.env.SANITY_API_TOKEN,
-        project_id: process.env.SANITY_PROJECT_ID,
-        dataset: process.env.SANITY_DATASET || "production",
+        space_id: process.env.CONTENTFUL_SPACE_ID,
+        access_token: process.env.CONTENTFUL_ACCESS_TOKEN,
+        management_token: process.env.CONTENTFUL_MANAGEMENT_TOKEN,
       },
     },
   ]

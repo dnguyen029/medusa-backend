@@ -31,23 +31,12 @@ module.exports = defineConfig({
       },
     },
     {
-      resolve: "@medusajs/file",
+      resolve: "medusa-google-storage",
       options: {
-        providers: [
-          {
-            resolve: "@medusajs/file-s3",
-            id: "s3-file-storage",
-            options: {
-              file_url: process.env.MINIO_ENDPOINT,
-              access_key_id: process.env.MINIO_ACCESS_KEY,
-              secret_access_key: process.env.MINIO_SECRET_KEY,
-              region: "us-east-1",
-              bucket: process.env.MINIO_BUCKET,
-              endpoint: process.env.MINIO_ENDPOINT,
-              s3_force_path_style: true
-            },
-          },
-        ],
+        project_id: process.env.GCS_PROJECT_ID,
+        bucket: process.env.GCS_BUCKET,
+        gcs_path: process.env.GCS_PATH,
+        keyFilename: process.env.GCS_KEYFILE,
       },
     },
   ],
@@ -58,15 +47,6 @@ module.exports = defineConfig({
         space_id: process.env.CONTENTFUL_SPACE_ID,
         access_token: process.env.CONTENTFUL_ACCESS_TOKEN,
         management_token: process.env.CONTENTFUL_MANAGEMENT_TOKEN,
-      },
-    },
-    {
-      resolve: `medusa-google-storage`,
-      options: {
-        project_id: process.env.GCS_PROJECT_ID,
-        bucket: process.env.GCS_BUCKET,
-        gcs_path: process.env.GCS_PATH,
-        keyFilename: process.env.GCS_KEYFILE,
       },
     },
   ]
